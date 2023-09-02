@@ -7,6 +7,13 @@ The Shadow algorithm is an algorithm for generating random digits that
 utilizes an standard (and popular) algorithm as the core generator. This
 algorithm is called LFSR (Linear Feedback Shift Register). The algorithm then uses Python's built-in random number generator the further scramble the output of the LFSR.
 
+## Installation
+```
+git clone https://github.com/rsdate/scrng
+cd scrng
+pip install .
+```
+
 ## A Simple Example (in Python)
 
 ```
