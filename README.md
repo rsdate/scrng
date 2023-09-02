@@ -10,7 +10,7 @@ algorithm is called LFSR (Linear Feedback Shift Register). The algorithm then us
 ## Installation
 ```
 git clone https://github.com/rsdate/scrng
-cd scrng
+cd scrng/dist
 pip install .
 ```
 
