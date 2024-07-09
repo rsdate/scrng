@@ -13,6 +13,8 @@ from random import SystemRandom
 
 # ========================================
 
+# Testing workflow
+
 def get_taps(thingToXor : int, taps : list[int]) -> int:
     copy = thingToXor
     if len(taps) > 1:
