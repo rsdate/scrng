@@ -1,0 +1,4 @@
+src/scrng/__pycache__/
+build/
+**/.DS_Store
+src/scrng.egg-info
