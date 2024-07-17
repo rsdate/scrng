@@ -19,11 +19,13 @@ git clone https://github.com/rsdate/scrng
 cd scrng
 pip install .
 ```
-Or you can simply install the official package from PyPI:
+Or you can simply install the official package from my repository:
 ```
-pip install scrng
+pip install git+https://github.com/rsdate/scrng.git@version
 ```
-It is up to you which approach you use to install this package.
+where ```version``` is the specific version of the package.
+
+* **Note**: Installing from PyPI is not an option for this package
 
 ## A Simple Example (in Python)
 
