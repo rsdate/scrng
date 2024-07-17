@@ -19,12 +19,14 @@ git clone https://github.com/rsdate/scrng
 cd scrng
 pip install .
 ```
-Or you can simply install the official package from PyPI:
+Or you can simply install the official package from my repository:
 ```
-pip install scrng
+pip install --extra-index-url scrng
 ```
 It is up to you which approach you use to install this package.
 
+* **Note**: Installing from PyPI is not an option for this package
+ 
 ## A Simple Example (in Python)
 
 ```
