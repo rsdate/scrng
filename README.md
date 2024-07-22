@@ -48,3 +48,5 @@ This example shows the barebones functionality of the ```scrng()``` function. Se
 in cycles of 5000. For x numbers to generate, the LFSR runs x / 5000 (rounded up) times. You can modify this
 number if you would like.
 * This generator doesn't implement seed functionally just yet. This notice will be removed when it does.
+* This generator has not been proven cryptographically secure.
+Please do not use it to generate keys of any kind.
