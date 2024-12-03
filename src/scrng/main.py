@@ -11,6 +11,10 @@ from random import SystemRandom
   # you own set of taps for other
   # strengths.
 
+  # NOTE: This algorithm is currently in beta
+  # and has not passed the tests for statistical
+  # suitability.
+
 # ========================================
 
 # Testing workflow
@@ -43,8 +47,9 @@ def scrng(numsToGen :int | None = 1, lenOfSeed :int | None = 100, strength : tup
 
             # append int representation of the binary
             #  - this helps to get rid of the 0b representation
-            #  - this automatically generates a set of values which when concatenated together become a random set of 
-            #    numbers that are between 0-9
+            #  - this automatically generates a set of values which when
+            #    concatenated together become a random set  
+            #    of numbers that are between 0-9
 
             concatVar += str(state)
 
@@ -72,6 +77,7 @@ def scrng(numsToGen :int | None = 1, lenOfSeed :int | None = 100, strength : tup
             # join the collected numbers
             myJoinedNewSeed = ''.join(newSeed)
             seedList.append(myJoinedNewSeed)
+    # Check for binary flag - is user-provided
     if binary == True:
         return [bin(int(j))[2:] for j in seedList]
     elif binary == False:
